@@ -18,4 +18,6 @@ const NoteSchema = new mongoose.Schema(
 )
 
 const Note = mongoose.model('Note', NoteSchema)
+console.log("Note model loaded");
+console.log(Note.schema.obj);
 module.exports = Note
